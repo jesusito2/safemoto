@@ -1,0 +1,16 @@
+.re{
+    /* background-color: #007BFF;  Azul base */
+    color: rgba(230, 44, 44, 0.824); /* Texto en blanco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    left: 630px;
+
+  }
+  
+  button:hover {
+    background-color: red; /* Azul más oscuro al pasar el mouse */
+  }

@@ -1,0 +1,75 @@
+<h1>Nuevo registro</h1>
+<hr>
+
+<div class="row animated fadeIn faster">
+  <div class="col">
+
+<form (ngSubmit)="registrar(t)"
+ #t="ngForm">
+<div class="form-group">
+<label>Firebase id</label>
+<input type="text"
+      class="form-control"
+      placeholder="Firebase ID"
+      [(ngModel)]="registro.id"
+      name="id"
+      disabled="disabled">
+<small class="form-text text-muted">Este campo es autogenerado</small>
+</div>
+
+<div class="form-group">
+<label>Numero de serie</label>
+<input type="text"
+      class="form-control"
+      placeholder="Numero de serie"
+      [(ngModel)]="registro.serie"
+      name="serie"
+      required>
+</div>
+
+<div class="form-group">
+  <label>Numero de motor</label>
+  <input type="text"
+        class="form-control"
+        placeholder="Numero de motor"
+        [(ngModel)]="registro.motor"
+      name="motor"
+        required>
+  </div>
+
+  <div class="form-group">
+    <label>Placas</label>
+    <input type="text"
+          class="form-control"
+          placeholder="Placas"
+          [(ngModel)]="registro.Placas"
+      name="Placas"
+          required>
+    </div>
+
+  <div class="form-group">
+      <label>Modelo</label>
+      <input type="text"
+            class="form-control"
+            placeholder="Modelo"
+            [(ngModel)]="registro.Modelo"
+            name="Modelo"
+            required>
+      </div>
+
+      <hr>
+
+    <!--El boton va a ser de tipo submit ya que mandaremos la informacion al formulario, va a indicar a angular que estoy intentando postear esta informacion  -->
+      <div class="container-login100-form-btn m-t-17">
+        <button class="btn btn-primary w-25" type="submit">
+          <i class="fa fa-save"></i>
+            Registrar 
+        </button>
+      </div>
+
+      <button class="re" (click)="goBack()">Volver</button>
+
+</form>
+</div>
+</div>
+

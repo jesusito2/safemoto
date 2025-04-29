@@ -3,4 +3,9 @@ export class UsuarioModel {
     email: string;
     password: string;
     nombre: string;
+    numeroserie: string;
+    numeromotor: string;
+    placas: string;
+    marca: string;
+    modelo: string;
 }
